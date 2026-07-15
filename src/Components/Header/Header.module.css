@@ -1,0 +1,33 @@
+.header_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+.header_left{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.header_left img{ 
+    width: 40px;
+    height: 20px;
+    object-fit: cover;
+}
+.header_left span{ 
+    font-family: "popins-bold";
+}
+.header_center ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header_right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header_right div img{
+    width: 20px;
+    height: 20px;
+}

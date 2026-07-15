@@ -1,0 +1,33 @@
+.hero_section{
+    position: relative;
+}
+.hero_section img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+.hero_top{
+    width: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    bottom: 100px;
+    right: 60px;
+    padding: 40px;
+    background-color: #FFF3E3;
+}
+.hero_top_discover span{
+    display: block;
+    font-family: "popins-bold";
+    font-size: 32px;
+    color: #B88E2F;
+}
+.hero_top_button button{
+    padding: 15px 30px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    background-color: #B88E2F;
+    color: #fff;
+}

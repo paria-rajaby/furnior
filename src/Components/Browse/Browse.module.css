@@ -1,0 +1,25 @@
+.browse_wrapper{
+    margin-top: 55px;
+    text-align: center;
+}
+.browse_wrapper p{
+    color: #666666;
+}
+.browse_wrapper h2{
+    font-family: "popins-bold";
+}
+.browse_imgs{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+}
+.browse_imgs div{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+}
+.browse_imgs div span{
+    font-size: 20px;
+    font-weight: 700;
+}

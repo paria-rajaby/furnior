@@ -1,0 +1,33 @@
+.Inspiration_wrapper{
+    margin-top: 70px;
+    background-color: #FCF8F3;
+    padding: 40px 10px 40px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inspiration_context{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.inspiration_context span{
+    font-size: 24px;
+    width: 70%;
+}
+.inspiration_context button{
+    width: 30%;
+    font-family: "popins-semibold";
+    font-size: 12px;
+}
+.inspiration_images{
+    display: flex;
+    gap: 10px;
+}
+.inspiration_context span{
+    font-family: "popins-bold";
+}
+.inspiration_context p{
+    color: #616161;
+    width: 80%;
+}

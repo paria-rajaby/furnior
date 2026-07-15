@@ -1,0 +1,39 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "popins-reg";
+    src: url("../public/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "popins-bold";
+    src: url("../public/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+    font-family: "popins-semibold";
+    src: url("../public/fonts/Poppins-SemiBold.ttf");
+}
+body{
+    font-family: "popins-reg";
+}
+li{
+    list-style-type: none;
+}
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+@media (max-width: 768px) {
+    .container{
+        padding: 0 16px;
+    }
+}
+@media (max-width: 480px) {
+    .container{
+        padding: 0 12px;
+    }
+}

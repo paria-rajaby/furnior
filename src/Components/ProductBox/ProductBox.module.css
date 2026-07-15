@@ -1,0 +1,77 @@
+.productbox_wrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.productbox_details_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+    padding: 15px 15px 30px 15px;
+    background-color: #F4F5F7;
+}
+.productbox_details_wrapper p{
+    color: #898989;
+}
+.productbox_details_title{
+    font-family: "popins-semibold";
+    font-size: 18px;
+}
+.productbox_price_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.productbox_price_wrapper span{
+    font-family: "popins-semibold";
+}
+.productbox_price_wrapper s{
+    color: #B0B0B0;
+    font-size: 14px;
+}
+.discount{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #E97171;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(58, 58, 58, 0.72);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.overlay button{
+    padding: 10px 40px;
+    background-color: #fff;
+    color: #B88E2F;
+    border: none;
+    outline: none;
+    font-family: "popins-semibold"
+}
+.overlay_context{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+    color: #fff;
+}
+.overlay_context div{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
