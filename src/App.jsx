@@ -1,4 +1,5 @@
 import Browse from "./Components/Browse/Browse"
+import Footer from "./Components/Footer/Footer"
 import Header from "./Components/Header/Header"
 import Hero from "./Components/Hero/Hero"
 import Inspiration from "./Components/Inspiration/Inspiration"
@@ -13,6 +14,7 @@ function App() {
       <Browse />
       <ProductWrapper />
       <Inspiration />
+      <Footer />
     </>
   )
 }
