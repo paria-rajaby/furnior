@@ -3,7 +3,7 @@ import styles from "./Hero.module.css";
 export default function Hero() {
   return (
     <div className={styles.hero_section}>
-        <img src="./images/scandinavian-interior-mockup-wall-decal-background 1.png"/>
+        <img src="all-images/images/scandinavian-interior-mockup-wall-decal-background 1.png"/>
 
         <div className={styles.hero_top}>
             <div><span>New Arrival</span></div>

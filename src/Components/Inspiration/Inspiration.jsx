@@ -11,11 +11,11 @@ export default function Inspiration() {
         
         <div className={styles.inspiration_images}>
             <div className={styles.inspiration_image}>
-                <img src="./images/Image.png"/>
+                <img src="all-images/images/Image.png"/>
             </div>
 
             <div>
-                 <img src="./images/Rectangle 25.png"/>
+                 <img src="all-images/images/Rectangle 25.png"/>
             </div>
         </div>
     </div>

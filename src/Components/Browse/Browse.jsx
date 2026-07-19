@@ -6,15 +6,15 @@ export default function Browse() {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <div className={styles.browse_imgs}>
             <div>
-                <img src="./images/Mask Group (1).png"/>
+                <img src="all-images/images/Mask Group (1).png"/>
                 <span>Dining</span>
             </div>
             <div>
-                <img src="./images/Image-living room.png"/>
+                <img src="all-images/images/Image-living room.png"/>
                 <span>Living</span>
             </div>
            <div>
-                <img src="./images/Mask Group.png"/>
+                <img src="all-images/images/Mask Group.png"/>
                 <span>Bedroom</span>              
             </div> 
         </div>
