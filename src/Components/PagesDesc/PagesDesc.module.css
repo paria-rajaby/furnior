@@ -1,0 +1,33 @@
+.pagedesc_wrapper{
+    margin-top: 100px;
+    background-color: #FAF3EA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 50px;
+}
+.pagedesc_wrapper div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
+.pagedesc_wrapper div img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.pagedesc_wrapper div div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    
+}
+.pagedesc_wrapper div div span{
+    font-family: "popins-semibold";
+}
+.pagedesc_wrapper div div p{
+    color: #898989;
+    font-size: 14px;
+}

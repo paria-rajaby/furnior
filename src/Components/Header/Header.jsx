@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import styles from "./Header.module.css";
 export default function Header() {
   return (
@@ -9,7 +10,9 @@ export default function Header() {
         <div className={styles.header_center}>
             <ul>
                 <li>Home</li>
-                <li>Shope</li>
+                <li>
+                  <Link to={"/shop"}>Shop</Link>
+                </li>
                 <li>About</li>
                 <li>Contact</li>
             </ul>

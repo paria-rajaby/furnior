@@ -21,6 +21,10 @@ body{
 li{
     list-style-type: none;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
 .container{
     width: 100%;
     max-width: 1280px;

@@ -1,0 +1,25 @@
+.paginationboxs_wrapper{
+    margin-top: 65px;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 32px;
+}
+.pagination_buttons{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.pagination_buttons button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #F9F1E7;
+    font-family: "popins-reg";
+}
+.active{
+    background-color: #B88E2F !important;
+    color: #fff;
+}
