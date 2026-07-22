@@ -1,4 +1,4 @@
-import { useState , useEffect } from "react";
+import { useState} from "react";
 import ProductBox from "../ProductBox/ProductBox"
 import styles from "./ProductWrapper.module.css"
 import productsData from "../../Data/Data"
@@ -6,9 +6,8 @@ export default function ProductWrapper() {
   const [visibleCount , setVisibleCount] = useState(8)
   const showMoreHandler = () => {
      if (visibleCount >= productsData.length) {
-      setVisibleCount(0)  
-      console.log(visibleCount);
-      
+      setVisibleCount(8)  
+      return
     }
     setVisibleCount((prev) => prev + 8)
   }

@@ -1,6 +1,10 @@
 import Styles from './PagesHero.module.css'
+import productsData from "../../Data/Data"
+import { useContext } from 'react'
+import { PaginationContext } from '../../Context/PaginationContext'
 
 export default function PagesHero() {
+    const {lastProductIndex ,firstProductIndex} = useContext(PaginationContext)
   return (
     <div className={Styles.pageshero_wrapper}>
         <img src="all-images/images/pagesHero.png" className={Styles.hero_img}/>
@@ -16,9 +20,6 @@ export default function PagesHero() {
         </div>
         {/* hero overlay */}
 
-
-
-
         <div className={Styles.bottom_hero}>
             <div className={Styles.bottom_hero_left}>
                 <div className={Styles.bottom_hero_left_filter}>
@@ -27,7 +28,7 @@ export default function PagesHero() {
                 </div>
                 <span className={Styles.bottom_hero_left_line}></span>
                 <div>
-                    <p>Showing 1–16 of 32 results</p>
+                    <p>Showing {firstProductIndex + 1}–{lastProductIndex} of {productsData.length} results</p>
                 </div>
             </div>
 

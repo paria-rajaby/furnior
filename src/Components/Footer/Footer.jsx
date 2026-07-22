@@ -1,4 +1,5 @@
 import styles from "./Footer.module.css"
+import { Link } from "react-router"
 
 export default function Footer() {
   return (
@@ -14,7 +15,9 @@ export default function Footer() {
                     <span>Links</span>
                     <ul>
                         <li>Home</li>
-                        <li>Shop</li>
+                        <li>
+                            <Link to={"/Shop"}>Shop</Link>
+                        </li>
                         <li>About</li>
                         <li>Contact</li>
                     </ul>

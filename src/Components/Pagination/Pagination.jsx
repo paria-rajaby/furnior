@@ -1,25 +1,31 @@
+import { useContext, useState} from "react";
 import styles from './Pagination.module.css'
 import ProductBox from '../../Components/ProductBox/ProductBox'
+import productsData from "../../Data/Data"
+import {PaginationContext} from "../../Context/PaginationContext";
 
 export default function Pagination() {
+  const {currentPage , setCurrentPage , productPerPage , currentProducts} = useContext(PaginationContext)
+  
+  const pagesCount = Math.ceil(productsData.length / productPerPage)
   return (
     <div className='container'>
         <div className={styles.paginationboxs_wrapper}>
-            <ProductBox />
-            <ProductBox />
-            <ProductBox />
-            <ProductBox />
-            <ProductBox />
-            <ProductBox />
-            <ProductBox />
-            <ProductBox />
+          {currentProducts.map((product) => (
+              <ProductBox key={product.id} product={product} />
+          ))}
+            
         </div>
 
         <div className={styles.pagination_buttons}>
-            <button className={styles.active}>1</button>
-            <button>2</button>
-            <button>3</button>
+          {
+            Array.from({length: pagesCount} , (_,index) => (
+              <button key={index} onClick={() => setCurrentPage(index + 1)} className={currentPage === index + 1 ? styles.active: ""}>{index + 1}</button>
+            ))
+          }
         </div>
+
+        
     </div>
   )
 }
