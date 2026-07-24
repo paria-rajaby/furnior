@@ -1,13 +1,25 @@
-import { useContext, useState} from "react";
+import { useContext} from "react";
 import styles from './Pagination.module.css'
 import ProductBox from '../../Components/ProductBox/ProductBox'
 import productsData from "../../Data/Data"
 import {PaginationContext} from "../../Context/PaginationContext";
 
-export default function Pagination() {
-  const {currentPage , setCurrentPage , productPerPage , currentProducts} = useContext(PaginationContext)
+export default function Pagination({filter}) {
+  const {currentPage , setCurrentPage , productPerPage , firstProductIndex , lastProductIndex} = useContext(PaginationContext)
+  let filteredProducts = productsData;
+
+if (filter === "new") {
+  filteredProducts = productsData.filter(product => product.isNew);
+}
+
+if (filter === "sale") {
+  filteredProducts = productsData.filter(product => product.isDiscount);
+}
+
+const currentProducts = filteredProducts.slice(firstProductIndex,lastProductIndex)
+ 
   
-  const pagesCount = Math.ceil(productsData.length / productPerPage)
+  const pagesCount = Math.ceil(filteredProducts.length / productPerPage)
   return (
     <div className='container'>
         <div className={styles.paginationboxs_wrapper}>

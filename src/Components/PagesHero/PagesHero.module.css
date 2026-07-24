@@ -75,3 +75,29 @@
     display: flex;
     align-items: center;
 }
+.filter_dropdown{
+    position: absolute;
+    bottom: -180px;
+    left: 20px;
+    z-index: 1;
+    background-color: #F4F5F7;
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid rgba(58, 58, 58, 0.72);
+}
+.filter_dropdown ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.filter_dropdown ul li , .bottom_hero_left_filter{
+    cursor: pointer;
+}
+.filter_dropdown span{
+    display: block;
+    width: 100%;
+    background-color: rgba(58, 58, 58, 0.72) ;
+    height: 2px;
+}
