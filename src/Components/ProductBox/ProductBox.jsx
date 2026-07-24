@@ -26,15 +26,15 @@ export default function ProductBox({product}) {
           <button>Add to cart</button>
           <div className={styles.overlay_context}>
             <div>
-              <img src="all-images/logos/gridicons_share.png"/>
+              <img src="/all-images/logos/gridicons_share.png"/>
               <span>Share</span>
             </div>
             <div>
-              <img src="all-images/logos/compare-svgrepo-com 1.png"/>
+              <img src="/all-images/logos/compare-svgrepo-com 1.png"/>
               <span>Compare</span>
             </div>
             <div>
-              <img src="all-images/logos/Heart.png"/>
+              <img src="/all-images/logos/Heart.png"/>
               <span>Like</span>
             </div>
           </div>

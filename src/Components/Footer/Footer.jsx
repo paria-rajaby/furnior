@@ -16,7 +16,7 @@ export default function Footer() {
                     <ul>
                         <li>Home</li>
                         <li>
-                            <Link to={"/Shop"}>Shop</Link>
+                            <Link to={"/page/Shop"}>Shop</Link>
                         </li>
                         <li>About</li>
                         <li>Contact</li>

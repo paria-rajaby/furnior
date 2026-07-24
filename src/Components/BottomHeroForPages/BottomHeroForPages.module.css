@@ -1,13 +1,4 @@
-.pageshero_wrapper{
-    position: relative;
-}
-.hero_img{
-    width: 100%;
-    object-fit: cover;
-    height: 316px;
-    filter: blur(3px); 
-}
-/* .bottom_hero{
+.bottom_hero{
     background-color: #F9F1E7;
     padding: 25px 50px;
     display: flex;
@@ -45,37 +36,8 @@
     width: 20%;
     padding: 10px;
 }
- */
 
-.overlay_wrapper{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    position: absolute;
-    top: 25%;
-    text-align: center;
-}
-.overlay_title{
-    font-family: "popins-semibold";
-    font-size: 24px;
-}
-.overlay_wrapper img{
-    width: 40px;
-    object-fit: cover;
-    height: 22px;
-}
-.overlay_context img{
-    width: 22px;
-    height: 22px;
-    object-fit: cover;
-}
-.overlay_context{
-    display: flex;
-    align-items: center;
-}
-/* .filter_dropdown{
+.filter_dropdown{
     position: absolute;
     bottom: -180px;
     left: 20px;
@@ -100,4 +62,4 @@
     width: 100%;
     background-color: rgba(58, 58, 58, 0.72) ;
     height: 2px;
-} */
+}
